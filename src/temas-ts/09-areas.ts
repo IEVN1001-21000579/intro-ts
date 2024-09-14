@@ -23,13 +23,13 @@ class Areas{
         return (3.141516) * ((this.radio) ** 2);
     }
 
-    /*
+    
     imprimir(){
-        console.log(`Area de la base del prisma: ${this.lado1 * this.lado2}`);
-        console.log(`Area de la base de la piramide: ${this.lado1 * this.lado2}`);
-        console.log(`Area de la base del cilindro: ${(3.141516) * ((this.radio) ** 2)}`);
+        console.log(`Area de la base del prisma: ${this.areaRecutangulo()}`);
+        console.log(`Area de la base de la piramide: ${this.areaCuadrado()}`);
+        console.log(`Area de la base del cilindro: ${(this.areaCirculo()}`);
     }
-    */
+    
 }
 
 //const area = new Areas(5,5,5);
