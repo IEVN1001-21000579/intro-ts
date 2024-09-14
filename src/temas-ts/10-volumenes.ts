@@ -7,6 +7,18 @@ class Volumenes extends Areas{
         this.altura = altura;
     }
 
+    volumenPrisma():number{
+        return this.areaRectangulo() * this.altura;
+    }
+
+    volumenPiramide():number{
+        return this.areaCuadrado() * this.altura;
+    }
+
+    volumenCilindro():number{
+        return this.areaCirculo() * this.altura;
+    }
+
     imprimir():void{
         //super.imprimir();
         console.log(`Volumen del prisma: ${(this.lado1 * this.lado2) * this.altura}`);
