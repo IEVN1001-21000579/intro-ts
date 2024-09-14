@@ -21,9 +21,9 @@ class Volumenes extends Areas{
 
     imprimir():void{
         //super.imprimir();
-        console.log(`Volumen del prisma: ${(this.lado1 * this.lado2) * this.altura}`);
-        console.log(`Volumen de la piramide: ${((this.lado1 * this.lado2) * this.altura) / 3}`);
-        console.log(`Volumen del cilindro: ${(((3.141516) * (this.radio ** 2)) * this.altura)}`);
+        console.log(`Volumen del prisma: ${this.volumenPrisma()}`);
+        console.log(`Volumen de la piramide: ${this.volumenPiramide()}`);
+        console.log(`Volumen del cilindro: ${this.volumenCilindro()}`);
     }
 }
 
