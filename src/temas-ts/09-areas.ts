@@ -11,11 +11,25 @@ class Areas{
         this.radio = radio;
     }
 
+    areaRectangulo():number{
+        return this.lado1 * this.lado2;
+    }
+
+    areaCuadrado():number{
+        return this.lado1 * this.lado2;
+    }
+
+    areaCilindro():number{
+        return (3.141516) * ((this.radio) ** 2);
+    }
+
+    /*
     imprimir(){
         console.log(`Area de la base del prisma: ${this.lado1 * this.lado2}`);
         console.log(`Area de la base de la piramide: ${this.lado1 * this.lado2}`);
         console.log(`Area de la base del cilindro: ${(3.141516) * ((this.radio) ** 2)}`);
     }
+    */
 }
 
 //const area = new Areas(5,5,5);
