@@ -1,50 +1,25 @@
 //area de un rectangulo, cuadrado y circulo (una sola clase)
 
 class Areas{
-    protected base : number;
-    protected altura : number;
+    protected lado1 : number;
+    protected lado2 : number;
     protected radio : number;
-    //protected area : number;
 
-    constructor(base:number, altura:number, radio:number){
-        this.base = base;
-        this.altura = altura;
+    constructor(lado1:number, lado2:number, radio:number){
+        this.lado1 = lado1;
+        this.lado2 = lado2;
         this.radio = radio;
-        //this.area = area;
     }
-    
+
     imprimir(){
-        let mensaje: string = `
-        Base del Rectangulo: ${this.base}, altura: ${this.altura}, area: ${this.altura*this.base}
-        Base del Cuadrado: ${this.base}, altura: ${this.altura}, area: ${this.altura*this.base}
-        Radio del circulo ${this.radio}, area: ${3.141516 * ((this.radio)**2)}`;
-        console.log(mensaje);
-
-        //console.log(`Base del Rectangulo: ${this.base}, altura: ${this.altura}, area: ${this.altura*this.base}`);
+        console.log(`Area de la base del prisma: ${this.lado1 * this.lado2}`);
+        console.log(`Area de la base de la piramide: ${this.lado1 * this.lado2}`);
+        console.log(`Area de la base del cilindro: ${(3.141516) * ((this.radio) ** 2)}`);
     }
-
-    /*
-    imprimirCuadrado(){
-        console.log(`Base del Cuadrado: ${this.base}, altura: ${this.altura}, area: ${this.altura*this.base}`);
-    }
-    imprimirCirculo(){
-        console.log(`Radio del circulo ${this.radio}, area: ${3.141516 * ((this.radio)**2)}`);
-    }
-    */
-
-    /*
-    areaRyC(){
-        this.base * this.altura;
-    }
-
-    areaCirculo(){
-        3.141516 * ((this.radio)**2)
-    }
-    */
 }
 
-const area = new Areas(5,5,5);
-area.imprimir();
+//const area = new Areas(5,5,5);
+//area.imprimir();
 
 /*
 const datosRectangulo = new Areas(5,8,0);
